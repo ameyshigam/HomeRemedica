@@ -1,0 +1,135 @@
+.feedback-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.feedback-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.feedback-card h2 {
+  color: var(--primary-color);
+  font-size: 28px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.feedback-card p {
+  color: #666;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.rating-container {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.rating-container p {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.star-rating {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.star {
+  font-size: 40px;
+  color: #ddd;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.star:hover,
+.star.active {
+  color: #FFD700; /* Gold color for stars */
+}
+
+.feedback-form .form-group {
+  margin-bottom: 25px;
+}
+
+.feedback-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.feedback-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  resize: vertical;
+  min-height: 120px;
+}
+
+.feedback-form textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.feedback-form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.feedback-form button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.success-message {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.success-message h3 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.success-message p {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .feedback-card {
+    padding: 20px;
+  }
+  
+  .star {
+    font-size: 32px;
+  }
+}
+
+/* Layout for sidebar + main content */
+.home-wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar fixed width */
+.sidebar {
+  width: 250px;
+  flex-shrink: 0;
+}
+
+/* Feedback area grows */
+.feedback-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+}

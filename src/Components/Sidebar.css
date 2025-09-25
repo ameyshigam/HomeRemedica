@@ -1,0 +1,164 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: var(--primary-color);
+  color: var(--light-text);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.sidebar-header h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.sidebar-header p {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.sidebar-logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.sidebar-menu {
+  flex: 1;
+}
+
+.menu-item {
+  display: block;
+  color: var(--light-text);
+  text-decoration: none;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu-item:hover {
+  opacity: 0.8;
+}
+
+.alphabet-nav {
+  margin-top: 20px;
+}
+
+.alphabet-nav h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.alphabet-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+.alphabet-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--light-text);
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.alphabet-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  flex-wrap: wrap;
+}
+
+.auth-link {
+  color: var(--light-text);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}
+
+.logout-btn {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--light-text);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.logout-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    top: auto;
+    z-index: 100;
+    padding: 10px;
+  }
+  
+  .sidebar-header {
+    display: none;
+  }
+  
+  .alphabet-grid {
+    display: none;
+  }
+  
+  .sidebar-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .sidebar-footer {
+    border-top: none;
+    padding-top: 0;
+  }
+}
+
+/* In Home.css or Sidebar.css */
+.home-wrapper {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  flex-shrink: 0;
+}
+
+.home-container {
+  flex: 1;
+  padding: 20px;
+}

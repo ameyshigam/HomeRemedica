@@ -1,0 +1,24 @@
+.about-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.about-content {
+  flex: 1;
+  padding: 3rem 2rem;
+  background: #fafafa;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-content h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-content p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
